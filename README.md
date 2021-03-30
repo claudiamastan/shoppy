@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Shoppy
+Simple React project - product catalog with password-protected price
+(password: "WELCOME")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Use case
+A shop wanted to showcase their products, but only willing to display prices to serious potential customers/member only.
 
-## Available Scripts
+## Process
+1. Create mockup in Figma  
+  ![image](https://user-images.githubusercontent.com/22455712/112935904-96f6ed00-90d9-11eb-9105-5133bbf4caa9.png)
 
-In the project directory, you can run:
+from here I decided to create 4 components to make up the app:
+- `Header` (includes logo, search bar, unlock button)
+- `CardItem` (individual card item, shows product image and price)
+- `CardsList` (container for CardItem, displays CardItems in 3-column grid)
+- `SearchBar` (to include in header. For user to look up item that includes the word in search query)
+- `PasswordPopUp` (user clicks the Unlock Button, the pop up page shows up)
 
-### `npm start`
+2. Create Mock db using  https://my-json-server.typicode.com/   
+Data can be found in db.json file  
+To include list of products (id, name, price, imageUrl, description, stock)  
+images from unsplash.com  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Start the React App using npx create-react-app  
+Will be using hooks.
+- App is small enough to use hooks as state management. 
+- Less clutter with hooks (vs functional component) - doesn't need to define many functions in the App/root component to set state.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Figuring out data flow  
+States:
+- items (to show using cardList)
+- password (show/unshow price)
+- searchQuery (filter the items to include earchQuery)
+- hidden (show/unshow popUp)  
 
-### `npm test`
+Components      |   Props
+----------------| -------------
+Header          |   hidden & toggleHidden (for unlock button to toggle popup), searchQuery (pass in to SearchBar component), password (to show/unshow unlock button)  
+SearchBar       |   searchQuery & setSearchQuery  
+CardList        |   items, searchQuery (to filter items), password (to show/unshow price), hidden & setHidden (just to add nice UI/UX - use hidden to blur out item display, use setHidden so when the password pop up page is shown, user can click area outside the pop up to close it)  
+CardItem        |   items
+Password Pop Up |   hidden & setHidden (once user submit the correct password, pop up is gone), password & setPassword  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Based on this, all states are put in App.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Since the app is small, all styles are put in App.css
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Notes for improvement
+- Password is vulnerable
+- Not mobile friendly
+- Individual item page using router, ItemPage component

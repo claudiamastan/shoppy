@@ -1,5 +1,6 @@
 # Shoppy
-Simple React project - product catalog with password-protected price
+Simple React project - product catalog with password-protected price  
+Access demo here :point_right: https://desolate-wildwood-01872.herokuapp.com/  
 (password: "WELCOME")
 
 ## Use case

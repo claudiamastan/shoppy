@@ -17,6 +17,7 @@ from here I decided to create 4 components to make up the app:
 - `PasswordPopUp` (user clicks the Unlock Button, the pop up page shows up)
 
 2. Create Mock db using  https://my-json-server.typicode.com/   
+Mock db: https://my-json-server.typicode.com/claudiamastan/shoppy/items  
 Data can be found in db.json file  
 To include list of products (id, name, price, imageUrl, description, stock)  
 images from unsplash.com  

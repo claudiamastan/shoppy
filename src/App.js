@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect} from 'react';
+import Header from '../src/Components/Header';
+import CardsList from '../src/Components/CardsList';
+import PasswordPopUp from './Components/PasswordPopUp';
 
 function App() {
+
+  const [items, setItems] = useState([]);
+  const [hidden, togglePopUp] = useState(true);
+  const [password, setPassword] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    fetch('https://my-json-server.typicode.com/claudiamastan/shoppy/items')
+    .then(response => response.json())
+    .then(items => {setItems(items)})
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header password={password} hidden={hidden} togglePopUp={togglePopUp} setSearchQuery={setSearchQuery}/>
+      <PasswordPopUp hidden={hidden} setHidden={togglePopUp} password={password} setPassword={setPassword}/>
+      <CardsList items={items} searchQuery={searchQuery} setHidden={togglePopUp} hidden={hidden} password={password}/>
     </div>
   );
 }

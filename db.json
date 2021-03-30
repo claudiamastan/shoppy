@@ -1,0 +1,140 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Ground Coffee",
+            "price": 10,
+            "imageUrl": "https://images.unsplash.com/photo-1615486866662-8511dc5f712f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description": "",
+            "stock": 10 
+        },
+        {
+            "id": 2,
+            "name": "Arabica Coffee Beans",
+            "price": 30,
+            "imageUrl": "https://images.unsplash.com/photo-1615486629562-c0d55e3096bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description": "",
+            "stock": 5
+        },
+        {
+            "id": 3,
+            "name": "Pistachio Nuts",
+            "price": 11,
+            "imageUrl": "https://images.unsplash.com/photo-1615485925933-379c8b6ad03c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description": "",
+            "stock":0
+        },
+        {
+            "id": 4,
+            "name":"Lemon Tea",
+            "price":5,
+            "imageUrl":"https://images.unsplash.com/photo-1615484477112-677decb29c57?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":3
+        },
+        {
+            "id": 5,
+            "name":"Rooibos Tea",
+            "price":6,
+            "imageUrl":"https://images.unsplash.com/photo-1587334273529-6ae9d7eb7b58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":3
+        },
+        {
+            "id": 6,
+            "name":"Premium Chocolate Bar",
+            "price":12,
+            "imageUrl":"https://images.unsplash.com/photo-1587132164684-cfd0b8214d8e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":13
+        },
+        {
+            "id": 7,
+            "name":"Lemon-Grape Flower Lollipop",
+            "price":3,
+            "imageUrl":"https://images.unsplash.com/photo-1587049417363-965d19b87943?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":30
+        },
+        {
+            "id": 8,
+            "name":"French Crepe",
+            "price":7.5,
+            "imageUrl":"https://images.unsplash.com/photo-1587131791788-ec0cb04e0a52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":10
+        },
+        {
+            "id": 9,
+            "name":"Pineapple Ring Candy",
+            "price":0.75,
+            "imageUrl":"https://images.unsplash.com/photo-1587131760475-63447dde8cf3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":20
+        },
+        {
+            "id": 10,
+            "name":"Chocolate Peppermint Candy Cane",
+            "price":1,
+            "imageUrl":"https://images.unsplash.com/photo-1587132152755-43769e8288a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":20
+        },
+        {
+            "id": 11,
+            "name":"Kitchen Mixer",
+            "price":30,
+            "imageUrl":"https://images.unsplash.com/photo-1583241475880-083f84372725?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":10
+        },
+        {
+            "id": 12,
+            "name":"Frying Pot",
+            "price":22,
+            "imageUrl":"https://images.unsplash.com/photo-1590091625593-090e3d58fc78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":10
+        },
+        {
+            "id": 13,
+            "name":"Colorful Glass Straws",
+            "price":8,
+            "imageUrl":"https://images.unsplash.com/photo-1571115355423-1d318bd95e22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":10
+        },
+        {
+            "id": 14,
+            "name":"Wooden Chopping Board",
+            "price":80,
+            "imageUrl":"https://images.unsplash.com/photo-1587048943814-f42d70fba58c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":0
+        },
+        {
+            "id": 15,
+            "name":"Pour Over Coffee Maker",
+            "price":40,
+            "imageUrl":"https://images.unsplash.com/photo-1592243503355-5183f4c8f689?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":4
+        },
+        {
+            "id": 16,
+            "name":"Dutch Oven",
+            "price":60,
+            "imageUrl":"https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":2
+        },
+        {
+            "id": 17,
+            "name":"Moka Pot",
+            "price":18,
+            "imageUrl":"https://images.unsplash.com/photo-1600331073565-d1f0831de6cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=278&q=80",
+            "description":"",
+            "stock":20
+        }
+    ]
+}
